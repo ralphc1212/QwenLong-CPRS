@@ -20,7 +20,7 @@ _**Weizhou Shen, Chenliang Li, Fanqi Wan, Shengyi Liao, Shaopeng Lai, Bo Zhang, 
 <!-- **Affiliations:** -->
 
 
-_Qwen-Doc Team, Alibaba Group_
+_Tongyi Lab, Alibaba Group_
 
 <p align="center">
     <img src="./assets/performance.png" width="100%"> <br>
