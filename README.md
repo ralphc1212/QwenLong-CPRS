@@ -129,11 +129,13 @@ export LLM_APIURL="" # your llm api url
 
 # for NIAH tasks
 export CPRS_PROMPT="You are an expert for information extraction, your task is to extract the 'needles' in the format of  'One of the special magic {type_needle_v} for {key} is: {value}.' from the documents to answer user's question.\N## tagging rule:\n- tag the needles with 'needle'"
+
+
 python infer.py \
  --model "your LLM model name" \
  --input_path "data/niah.jsonl" \
  --output_path "output/llm_with_cprs/niah.jsonl" \
- --cprs_prompt $CPRS_PROMPT \
+ --cprs_prompt "$CPRS_PROMPT" \
  --use_compress True
 
 
@@ -143,7 +145,7 @@ python infer.py \
  --model "your LLM model name" \
  --input_path "data/qa.jsonl" \
  --output_path "output/llm_with_cprs/niah.jsonl" \
- --cprs_prompt $CPRS_PROMPT \
+ --cprs_prompt "$CPRS_PROMPT" \
  --use_compress True
 
 
@@ -154,7 +156,7 @@ python infer.py \
  --model "your LLM model name" \
  --input_path "data/qa.jsonl" \
  --output_path "output/llm_with_cprs/niah.jsonl" \
- --cprs_prompt $CPRS_PROMPT \
+ --cprs_prompt "$CPRS_PROMPT" \
  --use_compress True
 ```
 

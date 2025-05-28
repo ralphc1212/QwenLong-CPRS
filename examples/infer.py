@@ -215,8 +215,8 @@ def main():
         # Use imap_unordered for better performance with large datasets
         for d in tqdm(filtered_data, total=len(filtered_data), desc="Processing"):
             result= process_item(d, args)
-            print(f'=============={result["id"]}==============')
             if result is not None:
+                print(f'=============={result["id"]}==============')
                 print(result['query'])
                 print('--------------------')
                 print(result['llm_preds'])

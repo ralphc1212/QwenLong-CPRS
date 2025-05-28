@@ -4,7 +4,7 @@ import sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 import time
 
-from qwen_long_cprs.modeling_qwen2 import Qwen2ForCausalLMandBIO
+from qwen_long_cprs.modeling_qwen2 import Qwen2ForCausalLMandBIO_pred
 import os
 import logging
 from transformers import AutoTokenizer, AutoConfig
@@ -191,7 +191,7 @@ tokenizer.add_special_tokens({'pad_token': tokenizer.eos_token})
 
 
 config = AutoConfig.from_pretrained(model_dir)
-model = Qwen2ForCausalLMandBIO.from_pretrained(
+model = Qwen2ForCausalLMandBIO_pred.from_pretrained(
     model_dir,config=config
 ).half().eval().to(device)
 
