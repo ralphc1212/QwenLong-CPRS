@@ -182,8 +182,6 @@ def clean_preds(keywords, return_offset):
     return new_keywords
 
 
-model_dir = '/nas-wulanchabu/shenweizhou.swz/qwen-long/context-compression/v1/BiLLM-main/saved_models/Qwen2-7B/20250320_infbench_v2/tech_report_outside_drop_0.5_len_8192_tagmode_normal_clean_merge_False_bi_label_type_BIOE_new_attn/Bilayer_21_bi_weight_10_outside_weight_0.5'
-
 device = torch.device("cuda:0")
 
 tokenizer = AutoTokenizer.from_pretrained(model_dir)
